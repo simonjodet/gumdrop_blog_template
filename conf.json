@@ -2,6 +2,7 @@
     "blacklist":[
         "composer.json",
         "composer.lock",
-        "composer.phar"
+        "composer.phar",
+        "README.md"
     ]
 }
