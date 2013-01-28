@@ -1,0 +1,4 @@
+_vendor
+composer.lock
+_site/*
+!_site/empty
