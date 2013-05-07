@@ -10,7 +10,7 @@ It features:
 * a default look based on [Bootstrap](http://twitter.github.io/bootstrap/),
 * a command-line tool to create blog posts,
 * a pagination for the home page with Ajax loading and "infinite scrolling",
-* a basic search engine,
+* a basic Ajax search engine,
 * an [Atom feed](atom.xml),
 * a [site map](sitemap.xml).
 
