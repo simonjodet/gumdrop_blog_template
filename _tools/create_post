@@ -1,0 +1,39 @@
+#!/usr/bin/env php
+<?php
+date_default_timezone_set('Europe/Paris');
+
+echo 'Post title:' . PHP_EOL;
+$title = trim(fread(STDIN, 150));
+if (trim($title) == '')
+{
+    echo 'Title cannot be empty!' . PHP_EOL;
+    exit(1);
+}
+
+$title_slug = trim(strtolower(preg_replace('/[^a-zA-Z0-9-]+/', '-', $title)), '-');
+
+echo 'Post date (leave empty for today):' . PHP_EOL;
+$date = fread(STDIN, 150);
+$date = trim($date);
+if (trim($date) == '')
+{
+    $date = date('Y-m-d');
+}
+
+$file_name = $date . '-' . $title_slug . '.markdown';
+
+
+$content = <<<EOD
+***
+{
+    "title":"$title",
+    "date":"$date",
+    "layout":"post.twig"
+}
+***
+
+EOD;
+
+file_put_contents(__DIR__ . '/../posts/' . $file_name, $content);
+echo 'Post created at ' . realpath(__DIR__ . '/../posts/' . $file_name);
+echo PHP_EOL;

@@ -1,8 +1,8 @@
 {
-    "blacklist":[
-        "composer.json",
-        "composer.lock",
-        "composer.phar",
-        "README.md"
-    ]
+  "blacklist": [
+    "composer.json",
+    "composer.lock",
+    "composer.phar",
+    "README.md"
+  ]
 }
