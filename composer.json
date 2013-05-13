@@ -2,6 +2,7 @@
   "name": "simonjodet/gumdrop_blog_template",
   "description": "A blog template for Gumdrop",
   "keywords": ["blog", "markdown", "generator", "twig"],
+  "version": "1.0.0",
   "type": "library",
   "authors": [
     {
