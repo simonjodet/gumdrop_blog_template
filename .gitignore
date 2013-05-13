@@ -1,4 +1,2 @@
 _vendor
 composer.lock
-#_site/*
-#!_site/delete_me
