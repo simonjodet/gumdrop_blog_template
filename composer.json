@@ -1,12 +1,23 @@
 {
-    "config": {
-        "vendor-dir": "_vendor"
-    },
-    "require":{
-        "simonjodet/gumdrop":"1.*"
-    },
-    "scripts":{
-        "post-update-cmd":"php _vendor/simonjodet/gumdrop/gumdrop.php install",
-        "post-install-cmd":"php _vendor/simonjodet/gumdrop/gumdrop.php install"
+  "name": "simonjodet/gumdrop_blog_template",
+  "description": "A blog template for Gumdrop",
+  "keywords": ["blog", "markdown", "generator", "twig"],
+  "type": "library",
+  "authors": [
+    {
+      "name": "Simon Jodet",
+      "email": "simon@jodet.com"
     }
+  ],
+  "license": "MIT",
+  "config": {
+    "vendor-dir": "_vendor"
+  },
+  "require": {
+    "simonjodet/gumdrop": "1.*"
+  },
+  "scripts": {
+    "post-update-cmd": "php _vendor/simonjodet/gumdrop/gumdrop.php install",
+    "post-install-cmd": "php _vendor/simonjodet/gumdrop/gumdrop.php install"
+  }
 }
